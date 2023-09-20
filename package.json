@@ -1,19 +1,28 @@
 {
-  "name": "socket-chat-be",
-  "version": "1.0.0",
-  "description": "socket app",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "juancalos301",
+  "bugs": {
+    "url": "https://github.com/juancarlos301/socket-chat-be/issues"
   },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "description": "socket app",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "homepage": "https://github.com/juancarlos301/socket-chat-be#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "socket-chat-be",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juancarlos301/socket-chat-be.git"
   },
-  "author": "juancalos301",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/juancarlos301/socket-chat-be/issues"
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/juancarlos301/socket-chat-be#readme"
+  "version": "1.0.0"
 }
