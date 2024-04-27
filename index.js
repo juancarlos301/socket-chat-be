@@ -24,7 +24,13 @@ io.on("connection", (socket) => {
 
   socket.on("send_message", (data) => {
     console.log(data);
-    socket.to(data.room).emit("receive_message", data);
+    socket.to(data.room).emit("receive_message", { ...data, from: socket.id });
+  });
+
+  socket.on("send-audio", (audioData) => {
+    // Aquí puedes procesar y almacenar el audio según tus necesidades
+    // Luego, emite el audio a todos los clientes conectados (retransmisión)
+    socket.to(data.room).emit("receive-audio", audioData);
   });
 
   //   socket.on("send_message", (data) => { => everyone
